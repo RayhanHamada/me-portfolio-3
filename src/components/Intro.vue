@@ -1,7 +1,6 @@
 <template>
   <div
     class="about flex flex-col h-auto justify-center items-center md:flex-row md:pt-10 space-y-5 md:space-x-10 lg:border-r-1 lg:border-my-red"
-    @mouseover="onMouseOver"
   >
     <img
       class="shadow rounded-full w-24 md:w-48 h-auto align-middle border-my-dark-darker"
@@ -33,7 +32,6 @@ export default defineComponent({
     onMounted(fetchProfilePic);
     return {
       profilePic,
-      onMouseOver: () => console.log(`hovering !`),
     };
   },
 });
